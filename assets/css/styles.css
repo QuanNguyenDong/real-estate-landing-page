@@ -3,7 +3,7 @@
 }
 
 :root {
-   --primary-color: #0f1b4c;
+  --primary-color: #0f1b4c;
 }
 
 html {
@@ -36,7 +36,7 @@ a {
   font-weight: 500;
   font-size: 1.4rem;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn:hover {
@@ -45,6 +45,7 @@ a {
 
 /* Header */
 .header {
+  position: relative;
   background: #e6f0ff;
   height: 100vh;
 }
@@ -52,7 +53,7 @@ a {
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 38px;
 }
 
 .navbar ul {
@@ -84,4 +85,113 @@ a {
 .navbar .action-btn {
   padding: 13px 16px;
   margin-left: 18px;
+}
+
+.hero {
+  margin-top: 130px;
+}
+
+.hero .info {
+  width: 51%;
+}
+
+.hero .sub-title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #687690;
+}
+
+.hero .title {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1.19;
+  color: #000336;
+}
+
+.hero .desc {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.78;
+  color: #5A6473;
+}
+
+.hero-cta {
+  margin-top: 40px;
+  min-width: 170px;
+}
+
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: calc((100vw - 1110px) / 2 - 100px);
+}
+
+/* Client */
+.client {
+  margin-top: 122px;
+}
+
+.client .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client .desc {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  color: #7D8589;
+}
+
+.client .row-desc {
+  margin-top: 23px;
+}
+
+.client .images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 96px;
+}
+
+/* Guides */
+.guides {
+  margin-top: 200px;
+}
+
+.guides .sub-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 1;
+  text-align: center;
+  color: #000339;
+}
+
+.guides .sub-title:before {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  content: "";
+  display: inline-block;
+  width: 41px;
+  height: 4px;
+  background: #000339;
+  border-radius: 12px;
+  transform: translateX(-50%)
+}
+
+.guides .desc {
+  width: 459px;
+  max-width: 100%;
+  margin: 20px auto 0;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  text-align: center;
+  color: #5A6473;
 }
